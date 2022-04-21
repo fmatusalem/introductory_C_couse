@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1650562930 source:/home/filipe/Dropbox/aulas-Homero/cpp/Bhaskara/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

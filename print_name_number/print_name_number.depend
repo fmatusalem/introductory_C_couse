@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1650374739 source:/home/filipe/Dropbox/aulas-Homero/cpp/print_name_number/main.c
+	<stdio.h>
+	<stdlib.h>
+

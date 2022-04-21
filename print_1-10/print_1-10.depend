@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1650304934 source:c:\users\filip\dropbox\aulas-homero\cpp\print_1-10\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1650304934 
+
+1650316843 source:/home/filipe/Dropbox/aulas-Homero/cpp/print_1-10/main.c
+	<stdio.h>
+	<stdlib.h>
+
