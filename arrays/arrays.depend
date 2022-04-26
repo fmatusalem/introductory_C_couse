@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1650566476 source:/home/filipe/Dropbox/aulas-Homero/cpp/arrays/main.c
+	<stdio.h>
+	<stdlib.h>
+
