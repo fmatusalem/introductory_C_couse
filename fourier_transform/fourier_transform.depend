@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1651192902 source:/home/filipe/Dropbox/aulas-Homero/c/fourier_transform/main.c
+	<math.h>
+	<stdio.h>
+
