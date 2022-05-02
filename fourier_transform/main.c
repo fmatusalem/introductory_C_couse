@@ -15,9 +15,9 @@ if(!input)
 printf( "Error openning sample.dat file\n");
 exit(0);
 }
+else {printf("The file sample.dat was opened!\n\n");}
 
-
-//openning file to read
+//openning file to write
 output = fopen("dft.dat","w"); /* ASCII file to write */
 if(!output)
 {
@@ -36,48 +36,47 @@ printf("Number of sample points %d\n",N);
 //put the file pointer at the beginning of the file again
 rewind(input);
 
-exit(0);
 
 //number of Points in DFT
-P=100;
+//P=100;
 
-float t[N];
-double xn[N],Xkr[P],Xki[P],abs;   //Xkr = real part,   Xki=imaginary part
+//float t[N];
+//double xn[N],Xkr[P],Xki[P],abs;   //Xkr = real part,   Xki=imaginary part
 
-for(i=0;i<N;i++){
-    fscanf(input,"%f",&t[i]);
-    fscanf(input,"%lf",&xn[i]);}
+//for(i=0;i<N;i++){
+//    fscanf(input,"%f",&t[i]);
+//    fscanf(input,"%lf",&xn[i]);}
 
 //checking
-for(i=0;i<N;i++){
-    printf("%f ",t[i]);
-    printf("%e\n",xn[i]);}
+//for(i=0;i<N;i++){
+//    printf("%f ",t[i]);
+//    printf("%e\n",xn[i]);}
 
 
-for(k=0;k<P;k++){
-Xkr[k]=Xki[k]=0;
+//for(k=0;k<P;k++){
+//Xkr[k]=Xki[k]=0;
 
-for(i=0;i<N;i++){
-Xkr[k]=Xkr[k]+xn[i]*cos(2*M_PI*k*i/N);  //real part
-Xki[k]=Xki[k]-xn[i]*sin(2*M_PI*k*i/N);   //imaginary part
-}
+//for(i=0;i<N;i++){
+//Xkr[k]=Xkr[k]+xn[i]*cos(2*M_PI*k*i/N);  //real part
+//Xki[k]=Xki[k]-xn[i]*sin(2*M_PI*k*i/N);   //imaginary part
+//}
 
-printf("%e +i%e\n",Xkr[k],Xki[k]);
-}
+//printf("%e +i%e\n",Xkr[k],Xki[k]);
+//}
 
 // calculate the frequency
-float dt,freq;
+//float dt,freq;
 
-dt=N/P;
-freq=1/dt;
+//dt=N/P;
+//freq=1/dt;
 
-for(k=0;k<P;k++){
+//for(k=0;k<P;k++){
 
-abs=sqrt(pow(Xkr[k],2)+pow(Xki[k],2));
-fprintf(output,"%f %e\n",k*freq,abs);
+//abs=sqrt(pow(Xkr[k],2)+pow(Xki[k],2));
+//fprintf(output,"%f %e\n",k*freq,abs);
 
 
-}
+//}
 
 
         fclose(input);
