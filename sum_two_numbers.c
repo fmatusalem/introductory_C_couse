@@ -18,5 +18,6 @@ printf("i =  %d\nj = %d\n\n",i,j);
 
 printf("Sum of the above two integers = %d\n",i+j);
     
+system("pause");  //to avoid the program to close instantly
 return 0;
 }
