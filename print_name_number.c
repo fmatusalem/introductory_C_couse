@@ -5,5 +5,7 @@ int main()
 {
     printf("######\n");
     printf("######\n");
-    return 0;
+
+system("pause");  //to avoid the program to close instantly
+return 0;
 }
